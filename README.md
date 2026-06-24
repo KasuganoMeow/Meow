@@ -30,7 +30,7 @@ The following are the goals of Project Meow.
 - [ ] `DRM`/`KMS` driver
 - [ ] X Window System porting
 - [ ] `xHCI` driver
-- [ ] Network driver知识产权归属总括放弃声明
+- [ ] Network driver
 - [ ] Have basic toolchain
 
 # License
