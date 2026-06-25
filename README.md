@@ -35,3 +35,5 @@ The following are the goals of Project Meow.
 
 # License
 [GNU AGPLv3](https://www.gnu.org/licenses/) or later
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" alt="GNU AGPLv3 Logo" style="width: 200px; height: auto;">
