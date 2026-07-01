@@ -29,8 +29,8 @@ set(INTERNAL_COMPILE_FLAGS
 )
 
 if(ARCH STREQUAL "x86_64")
-    set(CMAKE_C_COMPILER_TARGET x86_64-elf)
 	set(ARCH_COMPILE_FLAGS
+        -target x86_64-elf
 		-fno-stack-protector
 		-fno-stack-check
 		-fno-lto
@@ -52,10 +52,8 @@ if(ARCH STREQUAL "x86_64")
         -m64
     )
 elseif(ARCH STREQUAL "i686")
-    set(CMAKE_C_COMPILER_TARGET i686-elf)
 	set(ARCH_COMPILE_FLAGS
-		-m32
-        -march=i686
+        -target i686-elf
         -fno-stack-protector
         -fno-stack-check
         -fno-lto
@@ -63,6 +61,8 @@ elseif(ARCH STREQUAL "i686")
         -fno-pie
         -ffunction-sections
         -fdata-sections
+		-m32
+        -march=i686
         -mno-80387
         -mno-mmx
         -mno-sse
@@ -84,6 +84,7 @@ set(COMPILE_FLAGS
 )
 
 set(LINK_FLAGS
+    -fuse-ld=lld
     -nostdlib
     -static
     -Wl,--gc-sections
