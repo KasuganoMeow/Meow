@@ -4,21 +4,21 @@
 This file is part of Meow.
 
 Meow is free software: you can redistribute it and/or modify it under the terms of
-the GNU Affero General Public License as published by the Free Software Foundation, 
+the GNU Affero General Public License as published by the Free Software Foundation,
 either version 3 of the License, or (at your option) any later version.
 
 Meow is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
 PURPOSE. See the GNU Affero General Public License for more details.
 
-You should have received a copy of the GNU Affero General Public License along with 
+You should have received a copy of the GNU Affero General Public License along with
 Meow. If not, see <https://www.gnu.org/licenses/>.
 */
 
 #define ASM_FILE   1
 #include <meow/multiboot2.h>
 
-/* Although the Clang automatically resolves symbols at link time, 
+/* Although the Clang automatically resolves symbols at link time,
    it is good practice to list external symbols. */
 .extern pdpt
 .extern boot_gdt_pointer

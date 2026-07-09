@@ -42,7 +42,7 @@ The following are the goals of Project Meow.
 - [ ] Physical Memory Manager
 - [ ] Virtual Memory Manager
 - [ ] Memory Allocator
-  
+
 ## Long-term goals
 - [ ] `SMP` support
 - [ ] Keyboard interrupt (`APIC`) and `PS/2` driver
